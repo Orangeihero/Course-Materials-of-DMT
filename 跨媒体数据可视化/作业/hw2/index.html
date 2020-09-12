@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Shadows Into Light&subset=all' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=all' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald&subset=all' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px 40px;
+            font-family:Arial, sans-serif;
+            color: #232528;
+        }
+
+        #tip {
+            display: none;
+            position: absolute;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 2px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 2px;
+            padding-top: 2px;
+        }
+
+        h1 {
+            font-family: 'Shadows Into Light', Arial, sans-serif;
+            font-size: 40pt;
+            font-weight: normal;
+            text-align: center;
+        }
+        input {
+            border:2px solid #ccc;
+            backgroud-color:#ddd;
+            padding:0 10px;
+            font-family:"Lobster", Arial, sans-serif;
+            font-size: 16px;
+            line-height:26px;
+            height:26px;
+            color:#555;
+        }
+        textarea{
+            font-family:"Oswald", Arial, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            position: absolute;
+            top:345px;
+            left: 1070px;
+        }
+        span{
+            font-weight: normal;
+            position: absolute;
+            left: 1070px;
+            right:40px;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Treemap</h1>
+
+<p><canvas id="myCanvas" width= 1000px height=600px></canvas></p>
+
+<p>
+    <span style="font-family: 'Shadows Into Light', Arial, sans-serif;font-size: 20pt;top:145px;">Introduction</span>
+    <span style="font-family: 'Oswald', Arial, sans-serif;font-size: 13pt;top:180px;">There will be a corresponding value label when the mouse moves. Clicking an area with the left mouse button can enlarge the area, and then clicking the left mouse button again can return to the entire area. The treemap will change when changing the number in the box.</span>
+    <span style="font-family: 'Shadows Into Light', Arial, sans-serif;font-size: 20pt;top:305px;">Value</span>
+    <textarea rows="17" cols="60" id="input" >99, 95, 95, 94, 93, 92, 91, 91, 90, 90, 88, 84, 82, 82, 81, 78, 78, 76, 73, 71, 70, 69, 69, 68, 67, 67, 66, 64, 64, 64, 62, 62, 61, 59, 58, 57, 56, 54, 53, 53, 50, 48, 48, 47, 47, 46, 45, 44, 44, 42, 42, 42, 41, 41, 41, 41, 40, 40, 39, 38, 38, 37, 37, 36, 35, 35, 34, 33, 31, 29, 29, 29, 29, 27, 27, 26, 26, 24, 23, 23, 23, 22, 21, 18, 18, 16, 16, 12, 11, 11, 8, 6, 6, 5, 5, 4, 3, 2, 1</textarea>
+
+</p>
+
+<div id="tip">
+    <p><strong></strong></p>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
